@@ -11,7 +11,7 @@
 #include <fcntl.h>
 
 
-const std::string BOT_TOKEN = "MTQ2MzA4NjA3MDE4NTg1Mjk4Mw.GG5SEp.3dMl7Hxz5vbRc2-w-O54gVI1l1EuTE2xw2AQUw";
+const std::string BOT_TOKEN = "MTQ2MzA4NjA3MDE4NTg1Mjk4Mw.G07iuk.2WvI5quIuTNlU9Yp0w-S_daAy1RvDOVYKwXFXw";
 
 // Turns the software into a background running process (aka Daemon)
 void daemonize() {
