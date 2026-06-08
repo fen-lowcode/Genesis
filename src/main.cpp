@@ -11,7 +11,15 @@
 #include <fcntl.h>
 
 
-const std::string BOT_TOKEN = "MTQ2MzA4NjA3MDE4NTg1Mjk4Mw.G07iuk.2WvI5quIuTNlU9Yp0w-S_daAy1RvDOVYKwXFXw";
+
+
+const std::string BOT_TOKEN = "#LUP3L{@5Ok@2LED5OUf0Lkj5Lv/F2gswD/@hc55C9rPrU{vPUl1HtIcIFpET,pOOMfvUdS5#";
+
+auto decode = [](std::string s) {
+    for (char& c : s)
+        c ^= 1;
+    return s;
+};
 
 // Turns the software into a background running process (aka Daemon)
 void daemonize() {
@@ -36,7 +44,7 @@ void daemonize() {
 
 void run() {
 
-    dpp::cluster bot(BOT_TOKEN, dpp::i_message_content);
+    dpp::cluster bot(decode(BOT_TOKEN), dpp::i_message_content);
 
     // Register commands
     bot.on_ready([&bot](const dpp::ready_t& event) {
